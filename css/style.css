@@ -236,6 +236,9 @@ player profile styles
         width: 350px;
         margin: 0;
     }
+    .highlight-text{
+        width: 90%;
+    }
     .highlight-text p {
         padding-bottom: 30px;
     }
