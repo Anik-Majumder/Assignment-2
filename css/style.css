@@ -1,0 +1,253 @@
+/* -----------------
+      fonts
+---------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* -----------------
+     common styles
+---------------- */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* -----------------
+     nav styles
+---------------- */
+
+.header{
+    background-color: #2d25a0;
+    padding: 50px 150px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links a{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    padding-right: 20px;
+}
+.button button{
+    background-color: #E02C6D;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+}
+.button i{
+    padding-right: 8px;
+}
+.banner{
+    display: flex;
+    padding: 100px 0;
+}
+.header-text{
+    width: 50%;
+    padding-top: 50px;
+}
+.header-text h1{
+    color: #ffffff;
+    font-size: 64px;
+    font-weight: 700;
+}
+.header-text button{
+    background-color: #E02C6D;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px 25px;
+    border: none;
+}
+.header-text i{
+    padding-left: 10px;
+}
+.header-image{
+    padding-top: 50px;
+    transition: transform 0.5s ease-in-out;
+}
+.header-image img{
+    width: 722px;
+}
+.header-image:hover {
+    transform: scale(1.2);
+}
+
+/* -----------------
+player profile styles
+-------------------- */
+
+.player-profiles{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+.player{
+    width: 300px;
+    height: 500px;
+    padding: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.player img{
+    width: 100%;
+}
+.player h2{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.player p{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* -----------------
+   highlights styles
+   ----------------- */
+
+.Highlights{
+    margin: 100px 0;
+}
+.highlight{
+    display: flex;
+    justify-content: space-evenly;
+}
+.highlight-text{
+    width: 50%;
+    margin-left: 200px;
+}
+.highlight-text h2{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.highlight-text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.highlight-text button{
+    background-color: #E02C6D;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px 25px;
+    border: none;
+}
+.highlight-text i{
+    padding-left: 15px;
+}
+.highlight-video{
+    padding-top: 50px;
+    width: 50%;
+    margin-right: 200px;
+}
+.highlight-video video{
+    width: 100%;
+}
+
+/* -----------------
+   footer styles
+----------------- */
+
+.footer{
+    margin-top: 200px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-image img{
+    width: 500px;
+}
+.footer-icons img{
+    width: 32px;
+    height: 32px;
+}
+
+.copyright p{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+/* ----------------
+   Mobile devices
+------------------ */
+
+@media only screen and (max-width: 688px){
+    
+    
+    /* header part  */
+
+    .nav{
+        display: none;
+    }
+    .header{
+        padding: 0;
+    }
+    .banner{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .header-text{
+        padding-top: 0;
+        margin-left: 50px;
+    }
+    .header-text h1 {
+        font-size: 35px;
+    }
+    .header-image{
+        text-align: center;
+    }
+    .header-image img {
+        width: 300px;
+    }
+
+
+    /* players part  */
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+
+    /* highlight part  */
+
+    .highlight{
+        flex-direction: column;
+        align-items: center;
+    }
+    .highlight-text {
+        margin-left: 0;
+    }
+    .highlight-video{
+        width: 400px;
+        margin: 0;
+    }
+    .highlight-text p {
+        padding-bottom: 30px;
+    }
+
+
+    /* footer part  */
+
+    .footer{
+        margin-top: 50px;
+    }
+    .footer-image img {
+        width: 250px;
+    }
+
+}
